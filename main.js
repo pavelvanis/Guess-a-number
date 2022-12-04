@@ -71,19 +71,17 @@ function gameOver() {
     guessSubmit.disabled = true;
     moduloField.disabled = true;
     moduloSubmit.disabled = true;
-
-    boxReset.style.display = 'block';
 }
 
 
 function newGame() {
+
     const boxResults = document.querySelectorAll('.box-results');
     for (const boxResult of boxResults) {
         boxResult.textContent = ''
     }
 
     boxResult.style.display = 'none';
-    boxReset.style.display = 'none';
     modulsCount = 0;
     guessField.disabled = false;
     guessSubmit.disabled = false;
