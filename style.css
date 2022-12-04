@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 40%;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+ul li p {
+    margin: 8px 0;
+}
+
+.rules {
+    text-align: start;
+    margin: 0 4em;
+}
+
+.box-number {
+    margin: 2em auto ;
+    max-width: 50%;
+}
+
+.form {
+    margin: 0.5em;
+    text-align: start;
+}
+
+.box-reset {
+    display: none;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+#result {
+    padding: 5px;
+}
+
+.box-result {
+    display: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box-info">
+            <h1>Guess game</h1>
+            <ul class="rules">
+                <li>
+                    <p>hráč snaží odhadnout náhodně zvolené číslo r, kde r je větší než 0 a menší než 1001</p>
+                </li>
+                <li>
+                    <p>hráč píše svůj odhad do speciálního pole</p>
+                </li>
+                <li>
+                    <p>hráč má pouze jeden pokus a vybere-li číslo špatně - hra se skončí</p>
+                </li>
+                <li>
+                    <p>hráč má k dispozici jiné pole kam může zadávat čísla mezi 1 a 99</p>
+                </li>
+                <li>
+                    <p>po té co hráč napíše číslo do druhého pole (označme to číslo a) se mu vypíše výsledek r mod a a
+                        uloží se
+                        do seznamu jíž získaných výsledků</p>
+                </li>
+                <li>
+                    <p>hráč musí vždy mít k dispozici veškeré získané výsledky popsané v předchozím odstavci</p>
+                </li>
+                <li>
+                    <p>hráč má vždy možnost začít hru znova</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="box-number">
+            <div class="form">
+                <label for="guessField">Zkus uhádnout</label>
+                <input type="number" min="1" max="1001" id="guessField" class="guessField">
+                <input type="submit" value="Enter" id="guessSubmit">
+            </div>
+
+            <div class="form">
+                <label for="moduloField">Výpočet modula</label>
+                <input type="number" min="1" max="99" id="moduloField" class="moduloField">
+                <input type="submit" value="Enter" id="moduloSubmit">
+            </div>
+        </div>
+
+
+        <div class="box-result">
+            <p id="moduls"></p>
+            <p id="lastResult"></p>
+            <p id="result"></p>
+        </div>
+
+        <div class="box-reset">
+            <button id="reset-button">Start new game</button>
+        </div>
+        
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
