@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     margin-top: 200px;
-    max-width: 40%;
+    max-width: 50%;
     border: solid 2px black;
     border-radius: 10px;
 }
@@ -42,4 +42,31 @@ ul li p {
 
 .box-result {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rules {
+        margin: 5px;
+        padding-left: 20px;
+    }
+    .box-number {
+        display: grid;
+        gap: 5px;
+    }
+    .form {
+        display: grid;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+    .rules {
+        margin: 5px;
+        padding-left: 30px;
+    }
+
 }
